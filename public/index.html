@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<style>
+    wiggle {
+        width: 100%;
+    }
+</style>
+
+<body>
+    <header class="text-white bg-twmindigo">
+        <nav class="container py-5">
+            <div class="flex flex-col w-full lg:flex-row lg:items-center">
+                <!-- Logo & Toggler Button here -->
+                <div class="flex items-center justify-between">
+                    <!-- LOGO -->
+                    <a href="/">
+                        <img src="assets/logo.svg" alt="">
+                    </a>
+                    <!-- RESPONSIVE NAVBAR BUTTON TOGGLER -->
+                    <div>
+                        <button class="block p-1 outline-none lg:hidden mobile-menu-button" data-target="#navigation">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="text-white w-7 h-7" x-show="!showMenu"
+                                fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h16M4 18h16"></path>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="hidden w-full mobile-menu lg:block lg:ml-28" id="navigation">
+                    <div
+                        class="flex flex-col items-baseline justify-between w-full mt-6 ml-auto lg:flex-row lg:items-center lg:mt-0">
+                        <div class="flex flex-col w-full ml-0 font-normal lg:gap-12 lg:items-center lg:flex-row">
+                            <a href="#!" class="nav-link-item active">Features</a>
+                            <a href="#!" class="nav-link-item">Pricing</a>
+                            <a href="#!" class="nav-link-item">Showcase</a>
+                            <a href="#!" class="nav-link-item">Story</a>
+                            <a href="#!" class="nav-link-item">About</a>
+                            <a href="#!" class="px-8 py-3 mt-3 text-center lg:ml-auto bg-twmdark rounded-3xl lg:mt-0">
+                                <span class="text-base text-normal">Sign In</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <section class="container pt-24 pb-28">
+            <div class="grid items-center gap-8 md:gap-4 md:grid-cols-2">
+                <div class="flex flex-col gap-5 md:col-span-1">
+                    <p class="flex items-center py-2 pr-5 text-sm text-white rounded-full md:py-0 bg-twmdark md:w-max">
+                        <span class="px-5 py-2 mr-3 font-bold text-center text-green-800 rounded-full bg-twmgreen">
+                            Hot
+                        </span>
+                        Reporting integrated with A.I technology
+                    </p>
+                    <div class="text-4xl font-bold leading-tight lg:leading-snug lg:text-[55px]">
+                        Dropship Your <br class="hidden lg:block">
+                        Products Faster & <br class="hidden lg:block">
+                        Integrated
+                    </div>
+                    <p class="text-base leading-7 text-gray-400">
+                        Menunjukkan bagaimana caranya bekerja lebih cerdas <br class="hidden lg:block">
+                        sehingga meningkatkan produktifitas secara pesat.
+                    </p>
+                    <a href="#!"
+                        class="py-5 mt-5 text-xl font-semibold text-center text-green-800 rounded-full bg-twmgreen px-11 w-max">
+                        Get Started
+                    </a>
+                </div>
+
+                <div class="md:col-span-1">
+                    <img src="assets/header-img.png" alt="">
+                </div>
+            </div>
+        </section>
+    </header>
+
+    <section class="py-12 bg-gray-100 brands">
+        <div class="container flex flex-wrap justify-center gap-16">
+            <img src="assets/apple.svg" alt="">
+            <img src="assets/adobe.svg" alt="">
+            <img src="assets/slack.svg" alt="">
+            <img src="assets/spotify.svg" alt="">
+            <img src="assets/google.svg" alt="">
+        </div>
+    </section>
+
+    <section class="py-24 bg-white">
+        <div class="container">
+            <div class="mb-16 text-4xl font-bold text-center text-twmdark">
+                Why We <br>
+                Might Good For You
+            </div>
+            <div class="grid justify-center gap-y-16 md:grid-cols-2 lg:grid-cols-3">
+                <div class="col-span-1">
+                    <div class="flex flex-col items-center gap-4 group">
+                        <div
+                            class="p-6 text-center transition duration-300 ease-out bg-gray-100 rounded-full group-hover:bg-twmgreen w-max">
+                            <img src="assets/icons/fi_globe.svg" alt="">
+                        </div>
+                        <div class="mt-3 text-xl font-semibold text-twmdark">
+                            Shipping Global
+                        </div>
+                        <p class="text-base leading-8 text-center text-gray-400">
+                            Mengirim produkmu hingga <br> ke seluruh dunia
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-span-1">
+                    <div class="flex flex-col items-center gap-4 group">
+                        <div
+                            class="p-6 text-center transition duration-300 ease-out bg-gray-100 rounded-full group-hover:bg-twmgreen w-max">
+                            <img src="assets/icons/fi_shopping-bag.svg" alt="">
+                        </div>
+                        <div class="mt-3 text-xl font-semibold text-twmdark">
+                            Quick Checkout
+                        </div>
+                        <p class="text-base leading-8 text-center text-gray-400">
+                            Mempermudah pengguna untuk <br> melakukan pembayaran
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-span-1">
+                    <div class="flex flex-col items-center gap-4 group">
+                        <div
+                            class="p-6 text-center transition duration-300 ease-out bg-gray-100 rounded-full group-hover:bg-twmgreen w-max">
+                            <img src="assets/icons/fi_calendar.svg" alt="">
+                        </div>
+                        <div class="mt-3 text-xl font-semibold text-twmdark">
+                            Auto Report
+                        </div>
+                        <p class="text-base leading-8 text-center text-gray-400">
+                            Hindari buang banyak waktu <br> untuk membuat laporan
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-span-1">
+                    <div class="flex flex-col items-center gap-4 group">
+                        <div
+                            class="p-6 text-center transition duration-300 ease-out bg-gray-100 rounded-full group-hover:bg-twmgreen w-max">
+                            <img src="assets/icons/fi_database.svg" alt="">
+                        </div>
+                        <div class="mt-3 text-xl font-semibold text-twmdark">
+                            Data Secured
+                        </div>
+                        <p class="text-base leading-8 text-center text-gray-400">
+                            Data customer tersimpan dengan <br> sangat aman dan terjaga
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-span-1">
+                    <div class="flex flex-col items-center gap-4 group">
+                        <div
+                            class="p-6 text-center transition duration-300 ease-out bg-gray-100 rounded-full group-hover:bg-twmgreen w-max">
+                            <img src="assets/icons/fi_package.svg" alt="">
+                        </div>
+                        <div class="mt-3 text-xl font-semibold text-twmdark">
+                            Warehouse
+                        </div>
+                        <p class="text-base leading-8 text-center text-gray-400">
+                            Platform khsusus untuk <br> penyimpanan produk pelanggan
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-span-1">
+                    <div class="flex flex-col items-center gap-4 group">
+                        <div
+                            class="p-6 text-center transition duration-300 ease-out bg-gray-100 rounded-full group-hover:bg-twmgreen w-max">
+                            <img src="assets/icons/fi_headphones.svg" alt="">
+                        </div>
+                        <div class="mt-3 text-xl font-semibold text-twmdark">
+                            24/7 Support
+                        </div>
+                        <p class="text-base leading-8 text-center text-gray-400">
+                            Siap melayani kebutuhan anda <br> setiap saat
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="js/navbar-toggler.js"></script>
+</body>
+
+</html>

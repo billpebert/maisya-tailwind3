@@ -1,0 +1,11 @@
+{
+  "name": "twm-tailwind3",
+  "version": "1.0.0",
+  "description": "",
+  "main": "tailwind.config.js",
+  "scripts": {
+    "watch": "tailwindcss -i ./src/tailwind.css -o ./public/css/style.css --watch"
+  },
+  "author": "",
+  "license": "ISC"
+}
