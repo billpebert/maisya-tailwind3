@@ -697,6 +697,26 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-bottom: 6rem;
 }
 
+.py-1{
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+}
+
+.py-\[4px\]{
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+.py-\[2px\]{
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+
+.py-\[1px\]{
+  padding-top: 1px;
+  padding-bottom: 1px;
+}
+
 .pt-24{
   padding-top: 6rem;
 }
@@ -897,6 +917,16 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .lg\:gap-12{
     gap: 3rem;
+  }
+
+  .lg\:py-\[4px\]{
+    padding-top: 4px;
+    padding-bottom: 4px;
+  }
+
+  .lg\:py-\[40px\]{
+    padding-top: 40px;
+    padding-bottom: 40px;
   }
 
   .lg\:text-\[55px\]{
