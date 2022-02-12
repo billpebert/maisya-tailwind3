@@ -546,6 +546,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-bottom: 4rem;
 }
 
+.mr-auto{
+  margin-right: auto;
+}
+
+.mr-20{
+  margin-right: 5rem;
+}
+
 .block{
   display: block;
 }
@@ -596,12 +604,20 @@ Ensure the default browser behavior of the `hidden` attribute.
   align-items: baseline;
 }
 
+.justify-start{
+  justify-content: flex-start;
+}
+
 .justify-center{
   justify-content: center;
 }
 
 .justify-between{
   justify-content: space-between;
+}
+
+.justify-items-start{
+  justify-items: start;
 }
 
 .gap-8{
@@ -873,12 +889,32 @@ Ensure the default browser behavior of the `hidden` attribute.
     margin-left: auto;
   }
 
+  .lg\:ml-36{
+    margin-left: 9rem;
+  }
+
+  .lg\:mr-auto{
+    margin-right: auto;
+  }
+
+  .lg\:mr-28{
+    margin-right: 7rem;
+  }
+
+  .lg\:mr-36{
+    margin-right: 9rem;
+  }
+
   .lg\:block{
     display: block;
   }
 
   .lg\:hidden{
     display: none;
+  }
+
+  .lg\:w-auto{
+    width: auto;
   }
 
   .lg\:grid-cols-3{
@@ -891,6 +927,18 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .lg\:items-center{
     align-items: center;
+  }
+
+  .lg\:justify-center{
+    justify-content: center;
+  }
+
+  .lg\:justify-between{
+    justify-content: space-between;
+  }
+
+  .lg\:justify-items-stretch{
+    justify-items: stretch;
   }
 
   .lg\:gap-12{
