@@ -8,6 +8,9 @@
     <title>Landing Page</title>
 
     <link rel="stylesheet" href="css/style.css">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/video.js/7.10.2/video-js.min.css" rel="stylesheet">
+
 </head>
 
 <style>
@@ -17,6 +20,11 @@
 </style>
 
 <body>
+    <style>
+        .my-example {
+            border-radius: 20px !important;
+        }
+    </style>
     <header class="text-white bg-twmindigo">
         <nav class="container py-5">
             <div class="flex flex-col w-full lg:flex-row lg:items-center">
@@ -201,9 +209,48 @@
         </div>
     </section>
 
+    <section class="py-20">
+        <div class="container flex justify-center">
+            <!-- <video-js class="my-player" controls preload="auto" width="640" height="264"
+                poster="/public/assets/header-img.png" data-setup="{}"> -->
+            <video-js class="frame-video" id="my-player">
+                <source src="https://d33kv075lir7n3.cloudfront.net/Details+Screen+Part+Final.mp4" type="video/mp4" />
+                <p class="vjs-no-js text-twmdark">
+                    To view this video please enable JavaScript, and consider upgrading to a
+                    web browser that
+                    <a href="https://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
+                </p>
+            </video-js>
+        </div>
+    </section>
+
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="js/navbar-toggler.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/video.js/7.10.2/video.min.js"></script>
+
+    <script>
+        let options = {
+            controls: true,
+            autoplay: false,
+            preload: 'auto',
+            aspectRatio: '16:9',
+            fluid: true,
+        }
+
+        // Cara 1 data-setup
+        videojs('my-player', options, function () {
+            this.addClass('my-example');
+        });
+
+        // Cara 2 data-setup
+        // videojs('my-player', {
+        //     controls: true,
+        //     autoplay: false,
+        //     preload: 'auto',
+        //     aspectRatio: '16:9'
+        // });
+    </script>
 </body>
 
 </html>
